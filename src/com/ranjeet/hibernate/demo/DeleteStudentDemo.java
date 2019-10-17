@@ -10,7 +10,7 @@ import com.ranjeet.hibernate.entity.InstructorDetail;
 import com.ranjeet.hibernate.entity.Review;
 import com.ranjeet.hibernate.entity.Student;
 
-public class DeleteCoursesDemo {
+public class DeleteStudentDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -30,10 +30,10 @@ public class DeleteCoursesDemo {
 			
 			session.beginTransaction();
 			
-			int id = 1;
-			Student student = session.get(Student.class, id);
+			int id = 10;
+			Course course = session.get(Course.class, id);
 			
-			session.delete(student);
+			session.delete(course);
 			
 			session.getTransaction().commit();
 			
